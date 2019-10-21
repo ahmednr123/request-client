@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="json-20190722">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/json-20190722.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/mysql-connector-java-8.0.17.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/tomcat-jdbc-8.5.32.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/tomcat-juli-9.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/tomcat-util-9.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/tomcat-websocket-9.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/tomcat-websocket-api-9.0.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WEB-INF/lib/xjson.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

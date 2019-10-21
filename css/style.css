@@ -1,0 +1,203 @@
+/* ============================================= */
+/* ===                LOADER                 === */
+/* ============================================= */
+
+.lds-facebook {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    margin-top: 150px;
+    margin-left: calc(50% - 32px);
+}
+
+.lds-facebook div {
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    width: 13px;
+    background: #ddd;
+    animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+    left: 6px;
+    animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+    left: 26px;
+    animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+    left: 45px;
+    animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+    0% {
+        top: 6px;
+        height: 51px;
+    }
+    50%, 100% {
+        top: 19px;
+        height: 26px;
+    }
+}
+
+
+/* ============================================= */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0;
+}
+
+app, nav {
+    width: 650px;
+    margin: 20px auto 0px auto;
+}
+
+.tab-btn {
+    background: white;
+    border: 1px solid lightgray;
+    color: #bbb;
+    outline: 0;
+    padding: 8px 24px;
+    font-size: 14px;
+    z-index: 1;
+    margin-left: -1px;
+    font-weight: 400;
+}
+
+.tab-btn:hover {
+    color: #aaa;
+    border: 1px solid gray;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.tab-btn.selected {
+    background: aliceblue;
+    border: 1px solid cornflowerblue;
+    color: cornflowerblue;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.tab-btn:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 0px;
+}
+
+.tab-btn:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+input[type="text"] {
+    background: white;
+    border: 1px solid lightgray;
+    outline: 0;
+    padding: 8px 14px;
+    font-size: 14px;
+}
+
+input[type="text"].full-text {
+    width: calc(100% - 28px);
+}
+
+.full {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 20px
+}
+
+section section {
+    margin-bottom: 0px;
+}
+
+section > label {
+    color: #555;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 8px 0px 4px 0px;
+}
+
+.btn {
+    border: 0px;
+    padding: 10px;
+    background: gray;
+    color: white;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:disabled {
+    opacity: 0.4;
+}
+
+.btn.steel {
+    background: steelblue;
+}
+
+.btn.orange {
+    background: orange;
+}
+
+section.boxed {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    max-height: 200px;
+    overflow: auto;
+}
+
+section.boxed::-webkit-scrollbar {
+    width: 5px;
+    z-index: 0;
+}
+section.boxed::-webkit-scrollbar-thumb {
+    background: #eee;
+}
+
+.code {
+    font-family: 'Fira Code', monospace;
+}
+
+select {
+    border: 1px solid lightgray;
+    padding: 7.5px;
+    outline: 0;
+}
