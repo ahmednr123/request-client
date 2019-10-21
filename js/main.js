@@ -8,6 +8,7 @@ const main = {
     },
 
     setScreen: function (nav_type) {
+        nav_bar.setNav(nav_type);
         this.data.screen = nav_type;
         this.render();
     },
